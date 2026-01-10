@@ -9,6 +9,7 @@
     <meta name="author" content="Bryan Singer">
 
     <link rel="stylesheet" href="styles/base.css">
+     <script src="scripts/getdates.js" defer></script> 
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,17 +31,18 @@
 
     <main>
         <h1>Bryan Singer</h1>
-        <section class="grid card">
+        <section class="grid card one">
+            <h2>About Me</h2>
+            <p>My name is Bryan Singer and I love to work hard and learn new things. I am learning Web Design and Development with the aim of improving my coding techniques</p>
             <div class="info">
-                <h2>About Me</h2>
-                <p>Content</p>
                 <h3>Cape Coast, Ghana</h3>
                 <img>
                 <p>Content</p>
             </div>
             <img>
         </section>
-        <section class="grid card">
+        <section class="grid card two">
+            <h2>Header #2</h2>
             <p>Content</p>
             <p>Content</p>
             <p>Content</p>
@@ -48,13 +50,8 @@
     </main>
 
     <footer>
-        <p>
-            &copy
-            <span id="currentyear"></span>
-            Bryan Singer
-            United States
-        </p>
-        <p id="lastmodified">Javascript code</p>
+        <p>&copy <span id="year"></span> Bryan Singer United States</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
 </body>
 </html>
