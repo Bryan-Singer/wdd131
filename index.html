@@ -7,37 +7,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD 131 - Dynamic Web Fudamentals is the class I, Bryan Singer, am taking and this is the webpage about me.">
     <meta name="author" content="Bryan Singer">
+
     <link rel="stylesheet" href="styles/base.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="grid title">
-            <span id="course-title">WDD 131 - Dynamic web Fundamentals</span>>
-            <nav>
-                <a href="#">LinkedIn</a>
-                <a href="#">Canvas</a>
-                <a href="#">Scripture</a>
-                <a href="#">Final Project</a>
-            </nav>
-        </div>
+        <span id="course-title">WDD 131 - Dynamic web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Canvas</a></li>
+                <li><a href="#">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <h1>Bryan Singer</h1>
-        <div class="grid mainstuff">
-            <div class="grid maincontent">
-
-                <h2>Main Content</h2>  
+        <section class="grid card">
+            <div class="info">
+                <h2>About Me</h2>
+                <p>Content</p>
+                <h3>Cape Coast, Ghana</h3>
+                <img>
+                <p>Content</p>
             </div>
-            <aside>
-                <h2>Aside Content</h2>
-            </aside>
-        </div>
+            <img>
+        </section>
+        <section class="grid card">
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+        </section>
     </main>
 
     <footer>
-        <p>Footer Content</p>
+        <p>
+            &copy
+            <span id="currentyear"></span>
+            Bryan Singer
+            United States
+        </p>
+        <p id="lastmodified">Javascript code</p>
     </footer>
 </body>
 </html>

@@ -1,9 +1,23 @@
 /* All PageStuff */
 
+:root {
+    --background-color: #966fd6;
+    --main-text-color: #1a1423;
+    --grape: #372549;
+    --light-wood: #c68866;
+    --lavender: #d9dbf1;
+
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: "EB Garamond", "sans-serif";
+    font-weight: 400 ;
 }
 
 .grid {
@@ -12,13 +26,19 @@
 
 /* Header and Nav Bar */
 
-.title {
-    background-color: gray;
-    color: #fff;
+header {
+    display: grid;
 }
 
-h1 {
-    height: 6rem;
+span {
+    display: block;
+}
+
+#course-title {
+    height: 3rem;
+    align-content: center;
+    text-align: center;
+    background-color: var(--background-color);
 }
 
 /* Nav Bar */
@@ -26,22 +46,52 @@ h1 {
 nav {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    background-color: #000;
+    background-color: var(--grape);
+    max-width: 800px;
+    margin: 0 auto;
     padding: 1rem 0;
 }
 
+nav ul {
+    list-style-type: none;
+}
+
 nav a {
+    display: block;
+    padding: 1rem;
+    color: #fff;
     text-align: center;
     text-decoration: none;
-    color: #fff;
+}
+
+nav a:hover {
+    border: 1px solid var(--lavender);
+}
+
+/* Larger Views */
+
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
 }
 
 /* Main and Aside Content */
 
-.mainstuff {
-    grid-template-columns: 3fr 1fr;
-    height: 10rem;
-    background-color: lightgray;
+h1 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+main {
+    display: grid;
+    width: 800px;
+    background-color: var(--light-wood);
+    justify-content: center;
 }
 
 /* Main Content */
