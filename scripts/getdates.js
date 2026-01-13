@@ -9,5 +9,3 @@ document.getElementById("lastModified").innerHTML = document.lastModified;
 const today = new Date();
 
 year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
-
-earlierdate.innerHTML = `<span class="highlight">${earlierdate.lastModified()}</span>`;
