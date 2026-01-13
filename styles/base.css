@@ -39,7 +39,7 @@ header span {
     align-content: center;
     text-align: center;
     background-color: var(--background-color);
-    color: var(--grape);
+    color: var(--main-text-color);
     font-weight: 400;
 }
 
