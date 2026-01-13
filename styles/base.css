@@ -2,10 +2,10 @@
 
 :root {
     --background-color: #966fd6;
-    --main-text-color: #1a1423;
+    --main-text-color: #98ff98;
+    --second-text-color: #;
     --grape: #372549;
-    --light-wood: #9d6e55;
-    --lavender: #d9dbf1;
+    --lightness: #d9dbf1;
 
 }
 
@@ -91,7 +91,7 @@ nav a:hover {
 main {
     display: grid;
     width: auto;
-    background-color: var(--light-wood);
+    /* background-color: var(--lightness); */
     justify-content: center;
     grid-template-columns: 3fr 2fr;
     column-gap: 20px;
@@ -119,7 +119,7 @@ h1 {
 
 .card h2 {
     background-color: var(--background-color);
-    color: var(--grape);
+    color: var(--main-text-color);
     padding: 0.5rem 3rem;
     height: 3rem;
     text-align: center;
@@ -193,7 +193,7 @@ ul {
 
 footer {
     background-color: var(--background-color);
-    color: var(--grape);
+    color: var(--main-text-color);
     text-align: center;
     padding: 1rem;
 }
