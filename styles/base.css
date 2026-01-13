@@ -176,7 +176,7 @@ h3 {
 }
 
 .skilllist {
-    box-sizing: none;
+    /* box-sizing: none; */
     height: 100%;
     margin: 2rem;
 }
