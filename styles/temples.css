@@ -1,0 +1,89 @@
+:root {
+    --cherry: #f7cfe1;
+    --lavender: #ffb3ff;
+    --light-purple: #ff99ff;
+}
+
+* {
+    background-color: var(--cherry);
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+}
+
+header, footer, nav, ul, li, a, h1, p, span {
+    background-color: var(--lavender);
+}
+
+header, main, footer {
+    max-width: 100%;
+    margin: 1rem 0;
+    /* border: 1px solid lightgray; */
+    padding: 1rem 2rem;
+    /* background-color: skyblue; */
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header h1 {
+    text-align: center;
+    width: 15rem;
+}
+
+nav {
+    display: flex;
+    width: 50%;
+    /* align-content: center; */
+    justify-content: flex-end;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-direction: row; */
+    list-style: none;
+    padding: 0px;
+    width: 100%;
+}
+
+a {
+    /* padding: 1rem 2rem; */
+    text-decoration: none;
+    color: purple;
+    font-weight: 600;
+}
+
+a:hover {
+    background-color: purple;
+    color: var(--cherry);
+}
+
+main {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
