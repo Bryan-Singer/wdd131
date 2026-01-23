@@ -2,4 +2,34 @@
     .grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+    
+    .navigation {
+        display: flex;
+    }
+    
+    .navigation li {
+        display: block; /*change state in small view*/
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .navigation a {
+        color: purple;
+    }
+
 }
