@@ -1,0 +1,76 @@
+:root {
+    --background-color: ;
+    --secondary-background: ;
+    --accent: ;
+    --header-1: 900;
+    --header-2: 800;
+    --header-3: 300;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Zalando Sans Expanded', sans-serif;
+}
+
+header {
+    height: 5rem;
+    text-align: center;
+}
+
+h1 {
+    border: 1px solid #777;
+    font-weight: var(--header-1);
+    padding: 1rem;
+    margin: 1.25rem auto;
+    width: 75%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-weight: var(--header-2);
+}
+
+.weather img {
+    height: 50px;
+    width: auto;
+}
+
+.data {
+    border: 1px solid #777;
+    width: 95%;
+    text-align: center;
+    padding: 1rem 0;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.weather {
+    border: 1px solid #777;
+    width: 95%;
+    text-align: center;
+    padding: 1rem 0;
+    margin: auto;
+}
+
+footer {
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+    font-weight: var(--header-3);
+    height: 6rem;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0.5rem 0;
+}
