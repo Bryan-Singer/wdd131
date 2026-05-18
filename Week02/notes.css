@@ -1,0 +1,17 @@
+/* Basic Media Query */
+
+@media screen and (min-width: 640px) {  /*1*/
+    h1 {                                /*2*/
+        font-size: 2.5 rem;             /*3*/
+        margin: 1rem;                   /*4*/
+        color: navy;                  /*5*/
+    }                                   /*6, 7*/
+}
+
+/* 
+    1: the signature line of the @media query block that applies CSS rules when the specified conditions are met.
+    2: Starts the defined CSS rule.
+    3-5: Declarations to be applied to rule when @media query conditions are met
+    6-7: Closing the CSS rule and media query
+*/
+
