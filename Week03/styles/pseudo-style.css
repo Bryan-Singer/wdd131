@@ -1,0 +1,78 @@
+:root {
+    --bord: 1px solid #777 
+}
+
+/* Pseudo-class rules for the anchor tages to be navy for active, visited, and link links */
+a:active,
+a:link,
+a:visited {
+    color: navy;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Acme', sans-serif;
+}
+
+h1 {
+	margin: 0.75rem;
+}
+
+main {
+	margin: 0.5rem;
+	border: 1px solid rgb(0 0 0 / 0.1);
+	padding: 0.5rem;
+	background-color: #eee;
+}
+
+p {
+	margin: 1rem;
+}
+
+.datatable {
+	width: 200px;
+	margin-top: 2rem;
+}
+
+li {
+    content: ✅;
+    marker: navy;
+}
+
+.row {
+	display: grid;
+	grid-template-columns: 100px 100px;
+	align-items: center;
+	text-align: center;
+}
+
+.col {
+	padding: 0.5rem;
+    /* make the grid items bordered without doubling up lines */
+    border-top: var(--bord);
+    border-right: var(--bord);
+}
+
+/* Fixes the borders on the left column */
+.col:nth-child(odd) {
+    border-left: var(--bord);
+}
+
+/* Fix the borders on the bottom row */
+.row:last-child {
+    border-bottom: var(--bord);
+}
+
+a:hover {
+    color: purple;
+}
