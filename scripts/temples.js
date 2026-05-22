@@ -4,12 +4,12 @@ document.getElementById("currentYear").innerHTML = '&copy;${d.getFullYear()}';
 document.querySelector('#lastModified').textContent = 'Last Modification: ${document.lastModified}';
 
 // Hamburger Menu
-const mainnav = document.querySelector('.navigation');
 const hambutton = document.querySelector('#menu');
+const mainnav = document.querySelector('.navigation');
 
 hambutton.addEventListener('click', () => {
     mainnav.classList.toggle('show');
-    hambutton.classList.toggle('show')
+    hambutton.classList.toggle('show');
 });
 
 // select the DOM elements for output
