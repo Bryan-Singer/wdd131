@@ -1,28 +1,22 @@
-// Copied from Loom video
-let d = new Date();
-document.getElementById("currentYear").innerHTML = '&copy;${d.getFullYear()}';
-document.querySelector('#lastModified').textContent = 'Last Modification: ${document.lastModified}';
 
 // Hamburger Menu
 const hambutton = document.querySelector('#menu');
 const mainnav = document.querySelector('.navigation');
 
 hambutton.addEventListener('click', () => {
-    mainnav.classList.toggle('show');
-    hambutton.classList.toggle('show');
+  mainnav.classList.toggle('show');
+  hambutton.classList.toggle('show');
 });
 
-// select the DOM elements for output
-const year = document.querySelector("#year");
 
+// Current Year
+const year = document.querySelector("#currentyear");
+const lastmodified = document.querySelector("#lastmodified");
+// Modified date
+const date = new Date(document.lastModified);
 
-document.getElementById("lastModified").innerHTML = document.lastModified;
-
-
-// use the date object
-const today = new Date();
-
-year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
+year.textContent = new Date().getFullYear();
+lastmodified.innerHTML = date
 
 
 const temples = [
