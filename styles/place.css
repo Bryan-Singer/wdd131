@@ -1,0 +1,5 @@
+@media screen and (max-width: 310px) {
+    .banner-image {
+        content: url("imgs/ghana-clothes.jpg");
+    }
+}

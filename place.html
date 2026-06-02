@@ -16,7 +16,7 @@
     </header>
     <main>
         <div class="main-content">
-            <img class="banner-image" src="imgs/placeholder.png" alt="Banner Image">
+            <img class="banner-image" alt="Banner Image">
             <div class="data">
                 <h2>Data</h2>
                 <ul>
@@ -30,19 +30,19 @@
             </div>
             <div class="weather">
                 <h2>Weather</h2>
-                <img src="W03-Learning/images/placeholder.png" alt="img1">
+                <img src="imgs/weather_png.webp" alt="img1">
                 <ul>
-                    <li>Temperature:   Value</li>
-                    <li>Conditions:   Value</li>
-                    <li>Wind:   Value</li>
-                    <li>Humidity:   Value</li>
+                    <li>Temperature:   <span id="temp"></span></li>
+                    <li>Conditions:   <span id="condition"></span></li>
+                    <li>Wind:   <span id="wind"></span></li>
+                    <li>Wind Chill:   <span id="chill"></span></li>
                 </ul>
             </div>
         </div>
     </main>
     <footer>
-        <p>Standard Footer Content - Copyright - Bryan Singer - Location</p>
-        <p>Last Modified Date</p>
+        <p>&copy;<span id="currentyear"></span> Bryan Singer United States</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
     </footer>
 </body>
 </html>
